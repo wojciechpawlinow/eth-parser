@@ -6,6 +6,11 @@ Ethereum blockchain parser that will allow to query transactions for subscribed 
 
 Users not able to receive push notifications for incoming/outgoing transactions. By Implementing Parser interface we would be able to hook this up to notifications service to notify about any incoming/outgoing transactions.
 
+## To be improved  
+
+- Get all transactions refactor to a block reader that searches for transactions for all subscribed clients, to avoid a single incoming request producing huge number of outgoing calls to a third party provider.
+- WebSockets server instead of the HTTP.
+- Valuable unit tests
 
 ## ETH Info 
 
